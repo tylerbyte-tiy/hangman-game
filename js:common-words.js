@@ -11,3 +11,16 @@ var commonWords = [
   "who","oil","its","now","find","long","down","day","did","get",
   "come","made","may","part"
 ];
+function blanksFromAnswer ( answerWord ) {
+
+    var result = "";
+
+   for(var i=0; i<answerWord.length; i++){
+       result+='_ ';
+   }
+    return result;
+}
+
+function alterAt ( n, c, originalString ) {
+    return originalString.substr(0,n) + c + originalString.substr(n+1,originalString.length);
+}
