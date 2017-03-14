@@ -27,6 +27,20 @@ var underscore = blanksFromAnswer(word)
 
 document.getElementById("msg").textContent = underscore;
 
+// function replaceAtIndex(character, word, index) {
+//     var tempStr = "";
+//
+//     for (var n = 0; n < word.length; n++) {
+//         if (n == index) {
+//             tempStr += character;
+//         } else {
+//             tempStr += word[n];
+//         }
+//     }
+//
+//     return tempStr;
+// }
+
 // function alterAt ( n, c, originalString ) {
 //     return originalString.substr(0,n) + c + originalString.substr(n+1,originalString.length);
 // }
