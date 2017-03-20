@@ -10,22 +10,28 @@ var commonWords = [
   "who","oil","its","now","find","long","down","day","did",
   "get","come","made","may","part"];
 
-function randomWord(){
-  return commonWords[Math.floor(Math.random()*commonWords.length)];
+var wordList = [];
+
+function getWord() {
+  answerWord = wordList[Math.floor(Math.random () * wordList.length)];
+  return answerWord;
 }
 
-var word = randomWord();
+//   return commonWords[Math.floor(Math.random()*commonWords.length)];
+// }
+//
+// var word = randomWord();
+//
+// function blanksFromAnswer ( thing ) {
+//     var result = "";
+//     for(var i=0; i<thing.length; i++){
+//        result+= '_ ';
+//      }
+//     return result;
+// }
+// var underscore = blanksFromAnswer(word)
 
-function blanksFromAnswer ( thing ) {
-    var result = "";
-    for(var i=0; i<thing.length; i++){
-       result+= '_ ';
-     }
-    return result;
-}
-var underscore = blanksFromAnswer(word)
-
-document.getElementById("msg").textContent = underscore;
+// document.getElementById("msg").textContent = underscore;
 
 // function replaceAtIndex(character, word, index) {
 //     var tempStr = "";
@@ -40,7 +46,7 @@ document.getElementById("msg").textContent = underscore;
 //
 //     return tempStr;
 // }
-
+//
 // function alterAt ( n, c, originalString ) {
 //     return originalString.substr(0,n) + c + originalString.substr(n+1,originalString.length);
 // }
