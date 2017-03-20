@@ -44,7 +44,7 @@ function showProgress () {
 }
 
 function inputGuess () {
-  return document.querySelector('guessLetter').value;
+  return document.querySelector('.guessLetter').value;
 }
 
 function setGuess() {
@@ -78,7 +78,7 @@ function checkMath() {
     document.querySelector('.triesCount').innerHTML = "Tries: " + tries;
     return true;
   } else {
-    document.querySelector('triesCount').innerHTML = "Tries: " + tries;
+    document.querySelector('.triesCount').innerHTML = "Tries: " + tries;
     return false;
   }
 }
@@ -94,7 +94,7 @@ function setStatus() {
   } else {
     status = 'Nope! Try again.'
     tries--;
-    document.querySelector('triesCount').innerHTML = 'Tries: ' + tries;
+    document.querySelector('.triesCount').innerHTML = 'Tries: ' + tries;
     guessedLetters += guess.toUpperCase() + ", "
   }
   document.querySelector('.statusHolder').innerHTML = status;
