@@ -1,4 +1,4 @@
-/*body {
+body {
     font-family:sans-serif;
     font-weight:bold;
     font-size:16pt;
@@ -12,7 +12,7 @@
     height:auto;
 }
 /* For the left 'Guess A Letter!' and 'Guessed Letter' boxes. */
-/*.side-container {
+.side-container {
     margin-top:45px;
     margin-left:130px;
     width:170px;
@@ -39,7 +39,7 @@
     color: gray;
 }
 /* Word Box */
-/*.word-box {
+.word-box {
     width:250px;
     margin:auto;
     margin-top:25px;
@@ -58,7 +58,7 @@
     color:#1c2025;
 }
 /* Hangman Area */
-/*.hang-container {
+.hang-container {
     margin-top:-10px;
     margin-right: 90px;
     width:200px;
@@ -157,4 +157,8 @@
   background-color: black;
   font-size: 2rem;
   color: white;
-}*//*/*/
+}
+
+.progressHolder {
+  letter-spacing: 7px;
+}
