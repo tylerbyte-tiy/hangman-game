@@ -8,21 +8,18 @@ var status = 'status';
 var tries = '10';
 console.log(answerWord);
 
-var commonWords = [
-  "the","and","you","that","was","for","are","with","his",
-  "they","this","have","from","one","had","word","but",
-  "not","what","all","were","when","your","can","said",
-  "there","use","each","which","she","how","their","will",
-  "other","about","out","many","then","them","these","sock",
-  "some","her","would","make","like","him","into","time",
-  "has","look","two","more","write","see","number","way",
-  "could","people","than","first","water","been","call",
-  "who","oil","its","now","find","long","down","day","did",
-  "get","come","made","may","part"];
+var stateCapitals = [
+  "Montgomery","Juneau","Phoenix","Little Rock","Sacramento","Denver","Hartford","Dover","Tallahassee",
+  "Atlanta","Honolulu","Boise","Springfield","Indianapolis","Des Moines","Topeka","Frankfort",
+  "Baton Rouge","Augusta","Annapolis","Boston","Lansing","St. Paul","Jackson","Jefferson City",
+  "Helena","Lincoln","Carson City","Concord","Trenton","Santa Fe","Albany","Raleigh",
+  "Bismarck","Columbus","Oklahoma City","Salem","Harrisburg","Providence","Columbia","Pierre",
+  "Nashville","Austin","Salt Lake City","Montpelier","Richmond","Olympia","Charleston","Madison",
+  "Cheyenne"];
 
 function getWord() {
   console.log('word');
-  answerWord = commonWords[Math.floor(Math.random () * commonWords.length)];
+  answerWord = stateCapitals[Math.floor(Math.random () * stateCapitals.length)];
   console.log(answerWord);
   return answerWord;
 }
