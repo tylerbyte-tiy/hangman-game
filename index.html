@@ -1,93 +1,29 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Hangman Game</title>
     <link rel="stylesheet" type="text/css" href="./styles/main.css">
-</head>
-<body>
-  <div class="">
-
-
-  <div class="statusHolder">
-    Ready to play Hangman?
-  </div>
-  <div class="gameHolder">
-    <div class="triesCount">
-    </div>
-    <div class="guessHolder">
-      <input class= "guessLetter" type="text" name="guess" placeholder = "Guess A Letter" maxlength = "1">
-      <button class = "submitGuess">Guess</button>
-    </div>
-    <div class="progressHolder">
-      <div class="progressString">
-
-      </div>
-    </div>
-
-    <div class="guessedLetters">
-    </div>
-    <div class="newGameHolder">
-      <button class= "newGameButton" type="button" name="newGameButton" onclick="window.location.reload()">Start new game</button>
-
-    </div>
-  </div>
-  </div>
-<!-- <body>
-    <div class="topmatter">
-      <div class="hang-container">
-        <div class="scaffolding-top"></div>
-        <div class="scaffolding-left"></div>
-
-        <div class="draw-area">
-          <div class="rope"></div>
-          <div class="head"></div>
-          <div class="armbox">
-            <div class="leftarm"></div>
-            <div class="rightarm"></div>
-            <div class="torso"></div>
-          </div>
-
-          <div class="legbox">
-            <div class="leftleg"></div>
-            <div class="rightleg"></div>
-            <div class="pelvis"></div>
-          </div>
+  </head>
+  <body>
+    <div class="">
+      <div class="statusHolder">Ready to play Hangman?</div>
+      <div class="gameHolder">
+        <div class="triesCount"></div>
+        <div class="guessHolder">
+          <input class= "guessLetter" type="text" name="guess" placeholder = "Guess A Letter" maxlength = "1">
+          <button class = "submitGuess">Guess</button>
         </div>
-        <div class="scaffolding-base"></div>
-      </div>
-
-      <div class="side-container">
-        <div class="container-title">Guess A Letter!</div>
-        <div class="input-area">
-          <input id="letter-input" type="text" maxlength="1"/>
+        <div class="progressHolder">
+          <div class="progressString"></div>
+        </div>
+        <div class="guessedLetters"></div>
+        <div class="newGameHolder">
+          <button class= "newGameButton" type="button" name="newGameButton" onclick="window.location.reload()">Start new game</button>
         </div>
       </div>
-      <div><p id="msg" class="message-box flex-container">i</p>
-     </div>
-      <div class="side-container">
-         <div class="container-title">Guessed Letters</div>
-         <div id="wrong-letters"></div>
-
-      </div>
-     </div> -->
-
-    <!-- <div class="bottommatter">
-       <div class="word-box">
-        <div class="word-display"></div>
-       </div>
-
-       <div class="wordbox">
-        <div class="word-display"></div>
-        </div>
-
-    </div> -->
-    <!-- <script type="text/javascript" src="./JS/js:common-words.js"></script>
-    <script type="text/javascript" src="./JS/rules.js"></script> -->
-
-    <script src="./js/rules.js" charset="utf-8"></script>
-
-</body>
+  </div>
+  <script src="./js/rules.js" charset="utf-8"></script>
+  </body>
 </html>
