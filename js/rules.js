@@ -27,7 +27,7 @@ function getWord() {
   return answerWord;
 }
 
-document.querySelector('.triesCount').innerHTML = 'Tries: ' + tries;
+document.querySelector('.triesCount').innerHTML = 'Attempts remaining: ' + tries;
 
 function setAnswerWord() {
 answerWord = getWord();
@@ -98,7 +98,7 @@ function setStatus() {
   } else {
     status = 'Nope! Try again.'
     tries--;
-    document.querySelector('.triesCount').innerHTML = 'Tries: ' + tries;
+    document.querySelector('.triesCount').innerHTML = 'Attempts remaining: ' + tries;
     guessedLetters += guess + ", "
   }
   document.querySelector('.statusHolder').innerHTML = status;

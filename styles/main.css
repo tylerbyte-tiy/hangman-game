@@ -1,7 +1,7 @@
 body {
     font-family:sans-serif;
     font-weight:bold;
-    font-size:16pt;
+    font-size:56pt;
 }
 
 .topmatter {
@@ -160,5 +160,5 @@ body {
 }
 
 .progressHolder {
-  letter-spacing: 7px;
+  letter-spacing: 3px;
 }

@@ -10,12 +10,12 @@ var commonWords = [
   "who","oil","its","now","find","long","down","day","did",
   "get","come","made","may","part"];
 
-var wordList = [];
-
-function getWord() {
-  answerWord = wordList[Math.floor(Math.random () * wordList.length)];
-  return answerWord;
-}
+// var wordList = [];
+//
+// function getWord() {
+//   answerWord = wordList[Math.floor(Math.random () * wordList.length)];
+//   return answerWord;
+// }
 
 //   return commonWords[Math.floor(Math.random()*commonWords.length)];
 // }
