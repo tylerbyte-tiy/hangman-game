@@ -7,8 +7,11 @@
     <link rel="stylesheet" type="text/css" href="./styles/main.css">
   </head>
   <body>
-    <div class="">
-      <div class="statusHolder">State Capital Hangman</div>
+    <div class=""><h2>State Capital Hangman</h2>
+      <div class="newGameHolder">
+        <button class= "newGameButton" type="button" name="newGameButton" onclick="window.location.reload()"><span>Start new game</span></button>
+      </div>
+      <div class="statusHolder">Guess a letter!</div>
       <div class="gameHolder">
         <div class="triesCount"></div>
         <div class="guessHolder">
@@ -19,9 +22,7 @@
           <div class="progressString"></div>
         </div>
         <div class="guessedLetters"></div>
-        <div class="newGameHolder">
-          <button class= "newGameButton" type="button" name="newGameButton" onclick="window.location.reload()">Start new game</button>
-        </div>
+
       </div>
   </div>
   <script src="./js/rules.js" charset="utf-8"></script>
