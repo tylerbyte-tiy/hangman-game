@@ -2,7 +2,11 @@ body {
     font-family:sans-serif;
     font-weight:bold;
     font-size:56pt;
-    background-color: gray;
+    background-color: #E0E4CC;
+    color: #69D2E7;
+}
+.leftSide{
+  max-width: 900px;
 }
 .statusHolder{
   text-align: center;
@@ -11,9 +15,47 @@ body {
   text-align: center;
   font-size: 2rem;
 }
-h2{
+h4{
   text-align: center;
+  margin: auto;
 }
+.base{
+  height: 50px;
+  width: 300px;
+  background-color: #F38630;
+  float: right;
+  clear: both;
+}
+.tallBoard{
+  height: 400px;
+  width: 30px;
+  background-color: #F38630;
+  float: right;
+  clear: both;
+}
+.topBoard{
+  height: 30px;
+  width: 300px;
+  background-color: #F38630;
+  position: absolute;
+  float: right;
+  clear: both;
+}
+.rope{
+  height: 80px;
+  width: 15px;
+  position: absolute;
+  right: 300px;
+  background-color: brown;
+  float: right;
+  clear: both;
+}
+.rightSide{
+  position: absolute;
+  top: 100px;
+  right: 50px;
+}
+
 .newGameHolder{
   display: flex;
   align-items: center;
@@ -22,7 +64,7 @@ h2{
 .newGameButton{
   display: inline-block;
   border-radius: 4px;
-  background-color: #f4511e;
+  background-color: #FA6900;
   border: none;
   color: #FFFFFF;
   text-align: center;
